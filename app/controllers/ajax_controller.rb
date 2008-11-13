@@ -1,20 +1,25 @@
 class AjaxController < ApplicationController
   layout 'regular'
+  
+  # uses scriptaculous demos in JS, no RoR.
   def index
-end
+    @urls = ['simple_blind_ror', 'index']
+  end
+  
   #used by ajax call.
   def replace
-    @previous = :id
+    
     logger.info "in replace"
-    logger.info @action
-    logger.info @id
+    logger.info params[:action]
+    logger.info params[:id]
+    
+    @previous = params[:id]
     render :layout => false # no impact.
   end
-
+  
+  # main view using RoR not Javascript directly.
   def simple_blind_ror
     
   end
-  def blinder
-  end
-
+  
 end

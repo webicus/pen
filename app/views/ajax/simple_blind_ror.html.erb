@@ -12,7 +12,7 @@
 	<% 3.times do |i| %>
 <li>
 	<%= link_to_remote ("pen#{i}",
-
+					#:loading => "Effect.Fade('pen1');Effect.Fade('pen2');; return false;",
 					:complete => "Effect.SlideDown('pen#{i}'); return false;",
 					:url => {:action => :replace, :id => i })%>
 					</li>

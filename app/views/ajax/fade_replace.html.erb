@@ -1,0 +1,22 @@
+<h2>Fade Replace</h2>
+
+<p><em>This version creates then does cross fades between pens.</em></p>
+ 
+<p>Lorem ipsum dolor sit amet, urna orci, accumsan vitae habitant consequat sodales in, rhoncus cras sagittis wisi imperdiet aliquam pellentesque. Id pretium, nisl lorem ipsum, ipsum enim a enim amet, quam tempor id metus est imperdiet. Aliquam purus egestas, erat nulla erat ut, fermentum mi lacinia nunc vestibulum porta odio, wisi ante arcu est.
+</p>
+<div id="pen_image_even" style="display:none"></div>
+<div id="pen_image_odd" style="display:none"></div>
+<p>Lorem ipsum dolor sit amet, urna orci, accumsan vitae habitant consequat sodales in, rhoncus cras sagittis wisi imperdiet aliquam pellentesque. Id pretium, nisl lorem ipsum, ipsum enim a enim amet, quam tempor id metus est imperdiet. Aliquam purus egestas, erat nulla erat ut, fermentum mi lacinia nunc vestibulum porta odio, wisi ante arcu est.
+</p>
+
+<ul>
+	<% 3.times do |i| %>
+<li>
+	<%= link_to_remote ("pen #{i}",
+					:url => {:action => :fade_replace_aj, :id => i })%>
+					</li>
+				
+<% end%>
+</ul>
+<p>RoR Effects</p>
+

@@ -1,0 +1,12 @@
+<h1>Editing junk</h1>
+
+<% form_for(@junk) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @junk %> |
+<%= link_to 'Back', junks_path %>

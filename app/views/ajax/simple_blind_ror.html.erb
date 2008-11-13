@@ -1,0 +1,22 @@
+<div id="pen1" style="display:none">
+	<img src="/images/pen1.jpg" alt="" />
+</div>
+<div id="pen2" style="display:none">
+	<img src="/images/pen2.jpg" alt="" />
+</div>
+<div id="pen0" style="display:none">
+	<img src="/images/pen0.jpg" alt="" />
+</div>
+
+<ul>
+	<% 3.times do |i| %>
+<li>
+	<%= link_to_remote ("pen#{i}",
+
+					:complete => "Effect.SlideDown('pen#{i}'); return false;",
+					:url => {:action => :replace, :id => i })%>
+					</li>
+				
+<% end%>
+</ul>
+<p>RoR Effects</p>

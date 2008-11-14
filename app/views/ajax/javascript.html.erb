@@ -1,0 +1,54 @@
+<h1>Demos pulled from scriptaculous site.</h1>
+
+<p>These use Javascript directly, not RoR.</p>
+
+<p>slide down</p>
+<div id="slidedown_demo" style="display:none; width:80px; height:80px; background:#ccc; text-align:center;">
+  <div>
+    This is some test content. This is some test content.
+  </div>
+</div>
+<ul>
+  <li><a href="#" onclick="Effect.SlideDown('slidedown_demo'); return false;">Click here for a demo!</a></li>
+  <li><a href="#" onclick="$('slidedown_demo').hide(); return false;">Reset</a></li>
+</ul>
+
+
+<p>Fold demo</p>
+
+<div id="fold_demo" style="width:80px; height:80px; background:#ccc;"></div>
+<ul>
+  <li><a href="#" onclick="Effect.Fold('fold_demo'); return false;">Click me for a demo!</a></li>
+  <li><a href="#" onclick="$('fold_demo').show(); return false;">Reset</a></li>
+</ul>
+
+<p>Grow Demo</p>
+<div id="grow_demo" style="display:none; width:80px; height:80px; background:#ccc;"></div>
+<ul>
+  <li><a href="#" onclick="Effect.Grow('grow_demo'); return false;">Click me for a demo!</a></li>
+  <li><a href="#" onclick="$('grow_demo').hide(); return false;">Reset</a></li>
+</ul>
+
+
+
+ <script>
+ 	new Effect.Move('morph_demo', {  x: 200, y: 0, mode: 'relative',  transition: Effect.Transitions.spring});
+ </script>
+ 
+<p>other Demo</p>
+
+
+ 
+<style type="text/css"> 
+  div#morph_demo { position:relative; height:101px; width:101px; background:#4183ca; top:-101px; left:120px; }
+</style> 
+ 
+
+<div id="transitions_demo"> 
+
+  <div id="morph_demo"></div> 
+</div> 
+<ul>
+  <li><a href="#" onclick="new Effect.Move('morph_demo', {  x: 200, y: 0, mode: 'relative',  transition: Effect.Transitions.spring}); return false;">Click me for a demo!</a></li>
+  <li><a href="#" onclick="$('morph_demo').hide(); return false;">Reset</a></li>
+</ul>

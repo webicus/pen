@@ -1,0 +1,1 @@
+sliding horizontal bars that hold the styles

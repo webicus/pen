@@ -4,6 +4,6 @@
 
 <h2>Ruby on Rails Ajax Demo Programs</h2>
 <ul><% @urls.each do |url| %>
-<li><%= link_to (url, :action => url.to_sym ) %></li>
+<li><%= link_to (url, :action => url.to_sym )%> - <%=@descriptions[url]%> </li>
 <% end %></ul>
 

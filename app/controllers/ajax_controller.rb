@@ -4,6 +4,12 @@ class AjaxController < ApplicationController
   # uses scriptaculous demos in JS, no RoR.
   def index
     @urls = ['index', 'fade_replace', 'simple_blind_ror', 'javascript']
+    @descriptions = {'index' => "listing of all demos/methods.  This page",
+    
+    'fade_replace' => "link triggers central page replacement.  This will be used in the final project.  Uses ror/rjs",
+    'simple_blind_ror' => "simplistic scriptaculous effects using ror.  demo only.",
+    'javascript' => "uses javascript directly. demo only.  straight from Scriptaculous site."
+    }
   end
   
   #used by ajax call.

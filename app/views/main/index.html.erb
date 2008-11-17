@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+    <head>
+        <%= stylesheet_link_tag "demo.css" %>
+        <%= javascript_include_tag :defaults %>
+        <%= javascript_include_tag "jquery.js" %>
+        <%= javascript_include_tag "jquery.dimensions.js" %>
+        <%= javascript_include_tag "jquery.accordion.js" %>
+        <script type="text/javascript">
+            jQuery.noConflict();
+            jQuery(document).ready(function(){
+                jQuery.ui.accordion.animations.superbounce = function(options){
+                    this.slide(options, {
+                        easing: options.down ? "swing" : "swing",
+                        duration: 1250
+                    });
+                    
+                };
+                
+                
+                jQuery(".basic").accordion({
+                    animated: 'superbounce',autoheight:false 
+                });
+            });
+        </script>
+    </head>
+    <body>
+    	<div class="basic" id="list1b" style="float:left; width:700px;">
+			<a class="selected" >There is one obvious advantage:</a>
+			<div>
+				<p>
+					<%=image_tag "pen0.jpg"%>
+					pen 0
+					<%=image_tag "pen1.jpg"%>
+					pen 1
+					<%=image_tag "pen2.jpg"%>
+					<%=image_tag "pen0.jpg"%>
+					<%=image_tag "pen1.jpg"%>
+				</p>
+			</div>
+			<a >Now that you've got...</a>
+			<div >
+				<p>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					pen 0
+					<%=image_tag "pen0.jpg", :width => 100%>
+					pen1
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<br/>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+				</p>
+			</div>
+			<a >Rent one bear, ...</a>
+			<div>
+				<p>
+					get two for three beer.
+				</p>
+				<p>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+					<%=image_tag "pen0.jpg", :width => 100%>
+				</p>
+			</div>
+		</div>
+
+
+
+    </body>
+</html>

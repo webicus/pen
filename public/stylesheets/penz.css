@@ -8,18 +8,18 @@ html, body, #main {
 }
 
 body, div {
-    font-family: verdana,helvetica,sans-serif;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: small;
-    color: #333
+	font-size: 12px;
+	color: #ffffff; 
+	background: #ffffff; 
+	margin: 5px 0 5px 0; 
 }
 
 h1, h2 {
-    font-family: 'trebuchet ms', verdana, arial;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     padding: 10px;
     margin: 0
 }
@@ -211,4 +211,17 @@ div, #navigation ul, #list2 dd, #list3 div {
         display: block !important;
         height: auto !important
 }
+}
+#lnav {
+	font-family: verdana;
+
+text-align: right;
+left:18px;
+font-weight: bold;
+position:absolute;
+top:214px;
+left: 15px;
+color: #ffffff;
+padding: 10px;
+background-image: url(/assets/1c12ed-op-15.png)
 }

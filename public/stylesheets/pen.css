@@ -1,0 +1,131 @@
+body {
+	font-size: 13px;
+	font-family: Verdana, helvetica, sans-serif; 
+	text-align: left;
+	color: #ffffff; 
+	background: #383e61; 
+	margin: 5px 0 5px 0; 
+}
+
+#lnav {
+    font-family: verdana;
+	font-size: 123.1%;
+    text-align: right;
+    left: 18px;
+    position: absolute;
+    top: 214px;
+    left: 15px;
+    color: #ffffff;
+    padding: 10px;
+    background-image: url(/assets/1c12ed-op-15.png)
+}
+
+#container { /* body, container */
+	position: relative;
+	width: 1038px;
+	margin: 0 0 0 5px; 
+	border: 5px solid #FFF;
+}
+
+a:link, a:visited { /* unvisited, and visited links*/
+	color: #fff;
+	text-decoration: underline;
+}
+a:hover, a:active { /* hover and when clicked */
+	color: #0000ff;
+	text-decoration: none;
+}
+
+#lnav ul {
+	margin: 0;
+	padding: 0;
+}
+#lnav ul li{
+	list-style-type:none;
+}
+
+#lnav ul li a:link, #linkList ul li a:visited, #lnav ul li a:hover, #linkList ul li a:active { /* unvisited, and visited links*/
+	color: #fff;
+	text-decoration: none;
+}
+#lnav ul li a:hover, #linkList ul li a:active { /* hover and when clicked */
+	text-decoration: underline;
+}
+#logo {
+    left: 18px;
+    position: absolute;
+    top: 12px;
+}
+.copy {
+	background-image: url(/assets/383e61-op-20.png);
+	padding: 20px 10px;
+}
+.back {
+	z-index: 0;
+}
+#copy-home {
+	z-index: 5;
+	position: absolute;
+	top: 134px;
+	left: 228px;
+	width: 180px;
+}
+/*
+============================
+*/
+#footer { 
+	position: relative; 
+	text-align: center;
+	margin: 153.9%;
+}
+p img{
+	margin: 15px;
+}
+/* Left Bar */
+
+.basic  {
+	
+	font-family: verdana;
+	border: 1px solid black;
+
+}
+
+.basic div {
+
+}
+
+.basic p {
+	margin-bottom : 10px;
+	border: none;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 0px;
+	padding: 10px;
+
+}
+
+.basic a {
+	cursor:pointer;
+	display:block;
+	padding:5px;
+	margin-top: 0;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+	background-image: url(/assets/ffffff-op-15.png);
+	border-top: 1px solid #FFFFFF;
+
+	border-bottom: 1px solid #999;
+
+}
+.basic a:hover {
+	background-color: #ccc;
+
+}
+
+.basic a.selected {
+	background-image: url(/assets/ffffff-op-15.png);
+}
+

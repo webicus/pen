@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"  
+	"http://www.w3.org/TR/html4/strict.dtd"> 
+ 
+<html> 
+    <head> 
+	<!-- Source File -->
+	<!-- Source File -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css"> 
+    <link href="/stylesheets/base.css" media="screen" rel="stylesheet" type="text/css" /> 
+	 
+    <link href="/stylesheets/pen.css" media="screen" rel="stylesheet" type="text/css" /> 
+        <script src="/javascripts/prototype.js" type="text/javascript"></script> 
+<script src="/javascripts/effects.js" type="text/javascript"></script> 
+<script src="/javascripts/dragdrop.js" type="text/javascript"></script> 
+<script src="/javascripts/controls.js" type="text/javascript"></script> 
+<script src="/javascripts/application.js" type="text/javascript"></script> 
+        <script src="/javascripts/jquery.js" type="text/javascript"></script> 
+        <script src="/javascripts/jquery.dimensions.js" type="text/javascript"></script> 
+        <script src="/javascripts/jquery.accordion.js" type="text/javascript"></script> 
+        <script type="text/javascript"> 
+            jQuery.noConflict();
+            jQuery(document).ready(function(){
+                jQuery.ui.accordion.animations.superbounce = function(options){
+                    this.slide(options, {
+                        easing: options.down ? "swing" : "swing",
+                        duration: 1250
+                    });
+                    
+                };
+                
+                
+                jQuery(".basic").accordion({
+                    animated: 'superbounce',autoheight:false 
+                });
+            });
+        </script> 
+    </head> 
+    <body> 
+	<div id="container">
+
+	<div id="central">
+	<img class="back" src="/images/background/parrot-angle.jpg" alt="" />
+	<div class="copy" id="copy-home">
+		<h1>Penz by Design</h1>
+		<p>At Penz by Design you create your own writing experience.  You select the style, material, and color.  We do the rest.  Because we use unique acrylics, celluloid, and exotic woods, no one writing instrument is alike.  A finely handcrafted writing instrument made just for you. 
+		</p>
+	</div>
+	<!--
+	<p>hello here is a <a href="link text">link text</a>. Sitting in a plain undivved area</p> 
+	-->	
+	<div id="panels">
+    	<div class="basic" id="list1b" style="float:left; width:100%;"> 
+			<a >Emperor</a> 
+			<div> 
+				<p> 
+					<img alt="Pen0" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen1" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen2" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen0" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen1" src="/images/pens/small/pen0.jpg" /> 
+				</p> 
+			</div> 
+			<a class="selected" >Presidential</a> 
+			<div > 
+				<p> 
+					<img alt="Pen0" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen1" src="/images/pens/small/pen0.jpg" /> 
+				</p> 
+			</div> 
+			<a >Sidney Signature</a> 
+			<div> 
+				<p> 
+					<img alt="Pen0" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen1" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen0" src="/images/pens/small/pen0.jpg" /> 
+					<img alt="Pen1" src="/images/pens/small/pen0.jpg" />  
+				</p> 
+			</div> 
+		</div> 
+	</div> <!-- id=#panels -->
+    </div> <!-- central -->
+		<div id="lnav">
+		<ul>
+			<li><a href="our products">our products</a></li>
+			<li><a href="collector">collector</a></li>  
+			<li><a href="corporate">corporate</a></li>
+			<li><a href="elite">elite</a></li>
+			<li><a href="colors">colors</a></li>
+			<li><a href="about us">about us</a></li>
+			<li><a href="contact us">contact us</a></li>
+		</ul>
+	</div>
+ 	<div id="logo"><img src="/assets/penz-by-design-logo.png" alt="penz by design" /></div>
+	<br clear="all"/>
+ 	<div id="footer">
+ 		copyright (c)2008 penz by design, all rights reserved<br />
+original photography by <a href="http://www.akelphoto.com/">AKEL Studios</a><br />
+web design by <a href="http://webicus.com">webicus</a><br />
+ 	</div>
+	
+ 	</div><!-- container -->
+    </body> 
+</html> 

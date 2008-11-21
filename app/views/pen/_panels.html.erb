@@ -1,0 +1,21 @@
+<div id="panels">
+    <% styles = @collection.styles.find(:all, :order => :sequence) %>
+    <div class="basic" id="list1b" style="float:left; width:100%;">
+        <% styles.each do |s| %>
+        <% pens = s.pens.find(:all, :order => :sequence) %>
+        <a><%= s.title %></a>
+        <div>
+            <p class="panelcopy">
+                <%= s.description %>
+            </p>
+            <p>
+                <% pens.each do |p| %>
+                <img alt="<%=p.image_filename %>" src="/images/pens/small/<%=p.image_filename%>" />
+				<%= link_to_remote ("pen #{p.id}",
+					:url => {:action => :fade_replace_aj, :id => p.id })%>
+					</li>
+				<%end %>
+            </p>
+        </div><% end %>
+    </div>
+</div><!-- id=#panels -->

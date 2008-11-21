@@ -1,0 +1,90 @@
+1:
+  id: 1
+  collection_id: 1
+  title: Presidential
+  description: The Presidential pen with a luxuriously featured Swarovski crystal or diamonds & custom casted 3 dimensional accent rings, bands & caps.  Finished in 22kt gold or black titanium with Rhodium plating. Available in roller ball or 18kt gold or steel fountain tip.
+  sequence: 1
+2:
+  id: 2
+  collection_id: 1
+  title: Presidential II
+  description: The Presidential pen with a luxuriously featured Swarovski crystal or diamonds & custom casted 3 dimensional accent rings, bands & caps. Finished in 22kt gold or black titanium with Rhodium plating.  Available in roller ball or 18kt gold or steel fountain tip.
+  sequence: 2
+3:
+  id: 3
+  collection_id: 1
+  title: Legacy
+  description: Legacy pen features hand-carved bamboo patterns on the ends, clip and accent rings. Individually hand cast, polished then plated with precious 22k Gold or Black Titanium; these stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 5/8” x 5 5/8")
+  sequence: 3
+4:
+  id: 4
+  collection_id: 1
+  title: Emperor
+  description: Designed to please the most discriminating pen collector, the Emperor pen features four unique hand carved patterns found on the ends, clip and accent rings. Hand cast, polished then plated with precious 22k Gold or Black Titanium, these stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 21/32" x 5 5/8")
+  sequence: 4
+5:
+  id: 5
+  collection_id: 1
+  title: Emperor II
+  description: Designed to please the most discriminating pen collector, the Emperor pen features four unique hand carved patterns found on the ends, clip and accent rings. Hand cast, polished then plated with precious 22k Gold or Black Titanium, these stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 19/32" x 5 1/4")
+  sequence: 5
+6:
+  id: 6
+  collection_id: 2
+  title: Corporate Power Pen
+  description: Prominent black accent bands complimented in black titanium, gold, rhodium, or chrome. The Corporate Power Pen features twist operation with a smooth writing experience.
+  sequence: 6
+7:
+  id: 7
+  collection_id: 2
+  title: Ultra Corporate Power Pen
+  description:   Similar description of the Corporate Power Pen with enhanced designs on the clip, bands and end cap.  (Offered in both satin, gold, and chrome finishes).
+  sequence: 7
+8:
+  id: 8
+  collection_id: 2
+  title: Quantum
+  description: Unique magnetic pen cap design allows you to mount the cap on either the end of the pen without tugging or threading. (Roller ball.  Either gold, black titanium or Silver finish)
+  sequence: 8
+9:
+  id: 9
+  collection_id: 2
+  title: Wall Street
+  description: Steamed lined two toned contemporary pen which is perfectly balanced for writing comfort.  (Available in both 10K gold or Rhodium plated finishes). 
+  sequence: 9
+10:
+  id: 10
+  collection_id: 2
+  title: Corporate Champion
+  description: Contemporary style features include a twist action cap on the top of the pen and heavy-duty clip guaranteed not to break along with quality components throughout. 
+  sequence: 10
+11:
+  id: 11
+  collection_id: 3
+  title: Elite
+  description: The Elite pen offers form and function featuring an elegant rounded profile and accented in either Gold Titanium or Rhodium finish. 
+  sequence: 11
+12:
+  id: 12
+  collection_id: 3
+  title: Sidney Signature
+  description: Sidney Signature offers your choice of rich 22k gold or Black Titanium, hand-cast engraved insets on the cap and barrel ends surrounded by brilliant Rhodium plating. (11/16" x 5 3/4")
+  sequence: 12
+13:
+  id: 13
+  collection_id: 3
+  title: Sidney Signature II
+  description: Sidney Signature offers your choice of rich 22k gold or Black Titanium, hand-cast engraved insets on the cap and barrel ends surrounded by brilliant Rhodium plating.  (1/2 x 4 3/4)
+  sequence: 13
+14:
+  id: 14
+  collection_id: 3
+  title: Executive
+  description: The Executive Pen carries a streamlined look with high quality components that will surely compliment any executive’s desk.   (Gold/black, black titanium & gold, black titanium & chrome, & brushed satin/chrome finish)
+  sequence: 14
+15:
+  id: 15
+  collection_id: 1
+  title: Limited Edition
+  description: Limited Edition pens.
+  sequence: 15

@@ -1,15 +1,17 @@
 body {
-	font-size: 13px;
 	font-family: Verdana, helvetica, sans-serif; 
 	text-align: left;
 	color: #ffffff; 
 	background: #383e61; 
-	margin: 5px 0 5px 0; 
+	margin: 0 0 5px 0; 
+}
+#custom-doc { 
+	width: 81em; /*1038+15 = 1053 ==81em 1038 - 79.8462em; */
+	*width: 81em;
 }
 
 #lnav {
-    font-family: verdana;
-	font-size: 123.1%;
+	font-size: 138.5%;
     text-align: right;
     left: 18px;
     position: absolute;
@@ -19,12 +21,22 @@ body {
     padding: 10px;
     background-image: url(/assets/1c12ed-op-15.png)
 }
-
+#tag-line {
+	font-size: 123.1%;
+    position: absolute;
+    top: 4px;
+    left: 722px;
+    color: #ffffff;
+}
 #container { /* body, container */
 	position: relative;
-	width: 1038px;
 	margin: 0 0 0 5px; 
 	border: 5px solid #FFF;
+}
+#central { /* body, container */
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 a:link, a:visited { /* unvisited, and visited links*/
@@ -32,8 +44,9 @@ a:link, a:visited { /* unvisited, and visited links*/
 	text-decoration: underline;
 }
 a:hover, a:active { /* hover and when clicked */
-	color: #0000ff;
+	
 	text-decoration: none;
+	background-color: #ccc;
 }
 
 #lnav ul {
@@ -44,12 +57,14 @@ a:hover, a:active { /* hover and when clicked */
 	list-style-type:none;
 }
 
-#lnav ul li a:link, #linkList ul li a:visited, #lnav ul li a:hover, #linkList ul li a:active { /* unvisited, and visited links*/
+#lnav ul li a:link, #lnav ul li a:visited, #lnav ul li a:hover, #lnav ul li a:active { /* unvisited, and visited links*/
 	color: #fff;
 	text-decoration: none;
 }
-#lnav ul li a:hover, #linkList ul li a:active { /* hover and when clicked */
+#lnav ul li a:hover, #lnav ul li a:active { /* hover and when clicked */
 	text-decoration: underline;
+	background-image: none;
+	background-color: transparent;
 }
 #logo {
     left: 18px;
@@ -68,7 +83,7 @@ a:hover, a:active { /* hover and when clicked */
 	position: absolute;
 	top: 134px;
 	left: 228px;
-	width: 180px;
+	width: 200px;
 }
 /*
 ============================
@@ -99,24 +114,30 @@ p img{
 	border: none;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 10px;
+	font-size: 77%;
 	margin: 0px;
 	padding: 10px;
+	/*
+text-align: center;
+*/
+
 
 }
-
+.basic p.panelcopy{
+	margin: 0.8em 5px 0 5px;
+	padding: .5em;
+	background-image: url(/assets/b9c4d8-op-45.png);
+	color:#dbc055;
+}
 .basic a {
 	cursor:pointer;
 	display:block;
-	padding:5px;
 	margin-top: 0;
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 12px;
+	font-size: 138.5%;
 	color: white;
 	background-image: url(/assets/ffffff-op-15.png);
 	border-top: 1px solid #FFFFFF;
-
 	border-bottom: 1px solid #999;
 
 }
@@ -128,4 +149,12 @@ p img{
 .basic a.selected {
 	background-image: url(/assets/ffffff-op-15.png);
 }
+#subbody{
+	position: relative; 
+}
+#ft{
+	position:relative;
+	text-align: center;
+	margin: 0.5em 0 ;
 
+}

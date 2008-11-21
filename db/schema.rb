@@ -9,9 +9,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081113154825) do
+ActiveRecord::Schema.define(:version => 20081121033603) do
 
-  create_table "junks", :force => true do |t|
+  create_table "collections", :force => true do |t|
+    t.string   "title",                          :default => "", :null => false
+    t.string   "description",    :limit => 3000, :default => "", :null => false
+    t.string   "image_filename"
+    t.integer  "sequence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pens", :force => true do |t|
+    t.integer  "style_id"
+    t.string   "image_filename"
+    t.integer  "sequence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "styles", :force => true do |t|
+    t.integer  "collection_id",                                  :null => false
+    t.string   "title",                          :default => "", :null => false
+    t.string   "description",    :limit => 3000, :default => "", :null => false
+    t.string   "image_filename"
+    t.integer  "sequence"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

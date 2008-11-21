@@ -1,13 +1,18 @@
-	
-	<div id="central">
-		
-
-	</div> <!-- central content area - replaceable content -->
-
-	<div id="subbody" style="margin-top: <%=@margin_top%>;"> <!-- area under image, static -->
-	<%= render :partial => 'panels'%>
-	<br clear="all"/>
-	<%= render :partial => 'footer' %>
-	</div> <!-- subbody -->
-
-		
+<div id="central">
+	<!--
+		 <div id="pen_image_even" style="postion: absolute; left:200px; top: 100px;">
+	   <img alt="aa086246.jpg" src="/images/pens/large/aa086246_lrg.jpg" />
+		-->
+</div>
+<!-- central content area - replaceable content -->
+<div id="subbody" style="margin-top: <%=@margin_top%>;">
+    <!-- area under image, static -->
+    <% if (defined? @colors) %>
+    <%= render :partial => 'color_panels' %>
+    <% else %>
+    <%= render :partial => 'panels' %>
+    <% end %>
+    <br clear="all"/>
+    <%= render :partial => 'footer' %>
+</div>
+<!-- subbody -->

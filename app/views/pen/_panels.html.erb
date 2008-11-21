@@ -10,10 +10,10 @@
             </p>
             <p>
                 <% pens.each do |p| %>
-                <img alt="<%=p.image_filename %>" src="/images/pens/small/<%=p.image_filename%>" />
-				<%= link_to_remote ("pen #{p.id}",
+                <img alt="<%=p.image_filename %>.jpg" src="/images/pens/small/<%=p.image_filename%>.jpg" />
+			   <!-- <%= link_to_remote ("pen #{p.id}",
 					:url => {:action => :fade_replace_aj, :id => p.id })%>
-					</li>
+					</li> -->
 				<%end %>
             </p>
         </div><% end %>

@@ -85,6 +85,17 @@ a:hover, a:active { /* hover and when clicked */
 	left: 228px;
 	width: 200px;
 }
+#copy-content {
+	z-index: 5;
+	position: absolute;
+	top: 134px;
+	left: 228px;
+	width: 600px;
+	background-image: url(/assets/383e61-op-50.png);
+	padding: 1.7em 1.7em;
+}
+
+
 /*
 ============================
 */

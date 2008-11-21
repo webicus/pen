@@ -1,0 +1,9 @@
+-----------------------------
+Comment: v0.1 deployment ready
+-----------------------------
+Fri Nov 21 09:22:51 EST 2008
+/c/work/rails/pen
+commit 9d79d268b9598fc52bb6e90834936ecf94bba49e
+Author: ehw <eric@webicus.com>
+Date:   Fri Nov 21 00:02:11 2008 -0500
+

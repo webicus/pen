@@ -1,0 +1,9 @@
+<%# Called by RJS template, Contains all content that will be inserted %>
+<div id="image_frame" style="border-style:solid;border-width:2px;border-color:#576e9a;width:500px;">
+    <img src=<%="/images/pens/large/#{@image_name}_lrg.jpg" %> alt="" />
+    <div id="pen_title">
+        <%# @from.to_s  + @to.to_s + @cnt.to_s %>
+        <%= "&nbsp; #{@pen_name}" %>
+    </div>
+</div>
+<br/>

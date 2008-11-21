@@ -2,17 +2,17 @@
   id: 1
   title: collector
   description: Our Collector Series offer unique handcrafted writing instruments for the discriminating collector.  Careful consideration is given to each aspect of our design process, from the materials to the finely etched serial numbers.  The process begins with a personalized consultation with one of our master artisans where we capture each of your preferences.  Finally, we deliver the writing instrument of your choice, not off the shelf but one that offers an exceptional writing experience just for you. 
-  image_filename:  parrot-coll.jpg
+  image_filename:  parrot-coll
   sequence: 1
 2:
   id: 2
   title: corporate
   description: Our Corporate Series writing instruments are designed with the professional in mind.  Whether attending an important meeting or closing a major deal, our handmade writing instruments make a great first impression and offer an exceptional writing experience.
-  image_filename:  gold-black.jpg
+  image_filename:  gold-black
   sequence: 2
 3:
   id: 3
   title: elite
   description:  Our Elite Series selections are for those who want a luxury design for everyday use.  Each pen is finished in either 22k Gold/Rhodium or Black Titanium/Rhodium and assigned its own serial number.  Our Elite edition offers unique writing instruments with a quality custom design just for you. 
-  image_filename:  blue-fountain.jpg 
+  image_filename:  blue-fountain
   sequence: 3

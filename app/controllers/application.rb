@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-
+  
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'e2a3fb0e92f94a6f38b02fd7628a537a'
@@ -12,4 +12,19 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+  
+  
+  
+  # Authorization Stuff (session set or nil)
+  #==================================================================
+  
+  def authorized?
+    session[:stacy]
+  end
+  def authorize
+    session[:stacy] = true
+  end
+  def logoff
+    session[:stacy] = nil
+  end
 end

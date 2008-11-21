@@ -1,0 +1,16 @@
+<div id="panels">
+
+    <div class="basic" id="list1b" style="float:left; width:100%;">
+        <a><%= "Colors"%></a>
+		<p>
+        <% @colors.each do |c| %>
+             <img  alt="<%=c.image_filename %>.jpg" src="/images/colors/small/<%=c.image_filename%>.jpg" />
+				<!-- <%= link_to_remote ("pen #{c.id}",
+					:url => {:action => :fade_replace_aj, :id => c.id })%>
+					</li> -->
+
+
+		<% end %>
+		<p/>
+    </div>
+</div><!-- id=#panels -->

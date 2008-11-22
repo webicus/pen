@@ -3,18 +3,18 @@
     <div class="basic" id="list1b" style="float:left; width:100%;">
         <% styles.each do |s| %>
         <% pens = s.pens.find(:all, :order => :sequence) %>
-        <a><%= s.title %></a>
-        <div>
+        <a class="head"><%= s.title %></a>
+        <div class="panel-body">
             <p class="panelcopy">
                 <%= s.description %>
             </p>
             <p>
                 <% pens.each do |p| %>
-                <img alt="<%=p.image_filename %>.jpg" src="/images/pens/small/<%=p.image_filename%>.jpg" />
-			   <!-- <%= link_to_remote ("pen #{p.id}",
-					:url => {:action => :fade_replace_aj, :id => p.id })%>
-					</li> -->
-				<%end %>
+                <%= link_to_remote (image_tag("/images/pens/small/#{p.image_filename}.jpg"),
+                :url => {:action => :fade_replace_aj, :id => p.id }) %>
+
+                <%end %>
+
             </p>
         </div><% end %>
     </div>

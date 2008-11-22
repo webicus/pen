@@ -1,17 +1,20 @@
 body {
-	font-family: Verdana, helvetica, sans-serif; 
-	text-align: left;
-	color: #ffffff; 
-	background: #383e61; 
-	margin: 0 0 5px 0; 
-}
-#custom-doc { 
-	width: 81em; /*1038+15 = 1053 ==81em 1038 - 79.8462em; */
-	*width: 81em;
+    font-family: Verdana, helvetica, sans-serif;
+    text-align: left;
+    color: #ffffff;
+    background: #383e61;
+    margin: 0 0 5px 0;
+} #custom-doc {
+    width: 81em; /*1038+15 = 1053 ==81em 1038 - 79.8462em; */ *
+
+width:
+    81em;
 }
 
-#lnav {
-	font-size: 138.5%;
+h1, h2, h3 {
+    margin-top: 0px;
+} #lnav {
+    font-size: 138.5%;
     text-align: right;
     left: 18px;
     position: absolute;
@@ -20,152 +23,155 @@ body {
     color: #ffffff;
     padding: 10px;
     background-image: url(/assets/1c12ed-op-15.png)
-}
-#tag-line {
-	font-size: 123.1%;
+} #tag-line {
+    font-size: 123.1%;
     position: absolute;
     top: 4px;
     left: 722px;
     color: #ffffff;
-}
-#container { /* body, container */
-	position: relative;
-	margin: 0 0 0 5px; 
-	border: 5px solid #FFF;
-}
-#central { /* body, container */
-	position: absolute;
-	top: 0;
-	left: 0;
+} #container { /* body, container */
+    position: relative;
+    margin: 0 0 0 5px;
+    border: 5px solid #FFF;
+} #central { /* body, container */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 a:link, a:visited { /* unvisited, and visited links*/
-	color: #fff;
-	text-decoration: underline;
+    color: #fff;
+    text-decoration: underline;
 }
+
 a:hover, a:active { /* hover and when clicked */
-	
-	text-decoration: none;
-	background-color: #ccc;
-}
-
-#lnav ul {
-	margin: 0;
-	padding: 0;
-}
-#lnav ul li{
-	list-style-type:none;
-}
-
-#lnav ul li a:link, #lnav ul li a:visited, #lnav ul li a:hover, #lnav ul li a:active { /* unvisited, and visited links*/
-	color: #fff;
-	text-decoration: none;
-}
-#lnav ul li a:hover, #lnav ul li a:active { /* hover and when clicked */
-	text-decoration: underline;
-	background-image: none;
-	background-color: transparent;
-}
-#logo {
+    text-decoration: none;
+    background-color: #ccc;
+} #lnav ul {
+    margin: 0;
+    padding: 0;
+} #lnav ul li {
+    list-style-type: none;
+} #lnav ul li a:link, #lnav ul li a:visited, #lnav ul li a:hover, #lnav ul li a:active { /* unvisited, and visited links*/
+    color: #fff;
+    text-decoration: none;
+} #lnav ul li a:hover, #lnav ul li a:active { /* hover and when clicked */
+    text-decoration: underline;
+    background-image: none;
+    background-color: transparent;
+} #logo {
     left: 18px;
     position: absolute;
     top: 12px;
-}
-.copy {
-	background-image: url(/assets/383e61-op-20.png);
-	padding: 20px 10px;
-}
-.back {
-	z-index: 0;
-}
-#copy-home {
-	z-index: 5;
-	position: absolute;
-	top: 134px;
-	left: 228px;
-	width: 200px;
-}
-#copy-content {
-	z-index: 5;
-	position: absolute;
-	top: 134px;
-	left: 228px;
-	width: 600px;
-	background-image: url(/assets/383e61-op-50.png);
-	padding: 1.7em 1.7em;
-}
+} .copy {
+    background-image: url(/assets/383e61-op-20.png);
+    padding: 20px 10px;
+} .back {
+    z-index: 0;
+} #copy-home {
+    z-index: 5;
+    position: absolute;
+    top: 134px;
+    left: 228px;
+    width: 200px;
+} #copy-content {
+    z-index: 5;
+    position: absolute;
+    top: 134px;
+    left: 228px;
+    width: 600px;
+    background-image: url(/assets/383e61-op-50.png);
+    padding: 1.7em 1.7em;
+} #copy-mkt, #copy-mkt1 {
+    z-index: 5;
+    position: absolute;
+    top: 134px;
+    left: 228px;
+    width: 46.158em; *
 
+width:
+    45em;
+
+background-image:
+    url(/assets/ffffff-op-15.png);
+
+padding:
+    1.7em 1.7em;
+} #copy-mkt1 {
+    left: 341px;
+} #copy-mkt h1, #copy-mkt1 h1 {
+    text-transform: capitalize;
+}
 
 /*
-============================
-*/
-#footer { 
-	position: relative; 
-	text-align: center;
-	margin: 153.9%;
-}
-p img{
-	margin: 15px;
-}
-/* Left Bar */
-
-.basic  {
-	
-	font-family: verdana;
-	border: 1px solid black;
-
+ ============================
+ */ #footer {
+    position: relative;
+    text-align: center;
+    margin: 153.9%;
 }
 
-.basic div {
-
+p img {
+    margin: 15px;
 }
 
-.basic p {
-	margin-bottom : 10px;
-	border: none;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 77%;
-	margin: 0px;
-	padding: 10px;
-	/*
-text-align: center;
-*/
+/* Left Bar */ .basic {
+    font-family: verdana;
+    border: 1px solid black;
+} .basic div {
+} .basic p {
+    margin-bottom: 10px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 77%;
+    margin: 0px;
+    padding: 10px;
+    /*
+     text-align: center;
+     */
+} .basic p.panelcopy {
+    margin: 0.8em 5px 0 5px;
+    padding: .5em;
+    background-image: url(/assets/b9c4d8-op-45.png);
+    color: #dbc055;
+} .basic a {
+    cursor: pointer;
+    display: block;
+    margin-top: 0;
+    text-decoration: none;
+    font-size: 138.5%;
+    color: white;
+    background-image: url(/assets/ffffff-op-15.png);
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #999;
+} .basic a:hover {
+    background-color: #ccc;
+} .basic a.selected {
+    background-image: url(/assets/ffffff-op-15.png);
+} #subbody {
+    position: relative;
+} #ft {
+    position: relative;
+    text-align: center;
+    margin: 0.5em 0;
+} #pen_image_odd, #pen_image_even {
+    position: relative;
+    background-image: url(/assets/purple-gradient-op-95.png);
+    margin-left: 211px;
+    margin-top: 53px;
+} #pen_image_odd img, #pen_image_even img {
+    margin: 100px 10px;
+} .basic a img {
+    display: inline;
+} .panel-body a, .panel-body a:hover {
+    display: inline;
+    background-image: none;
+    cursor: default;
+    border: none;
+    margin: 0;
+} .panel-body a:hover {
+    background-color: transparent;
+    background-image: url(/assets/ffffff-op-15.png);
+}
 
-
-}
-.basic p.panelcopy{
-	margin: 0.8em 5px 0 5px;
-	padding: .5em;
-	background-image: url(/assets/b9c4d8-op-45.png);
-	color:#dbc055;
-}
-.basic a {
-	cursor:pointer;
-	display:block;
-	margin-top: 0;
-	text-decoration: none;
-	font-size: 138.5%;
-	color: white;
-	background-image: url(/assets/ffffff-op-15.png);
-	border-top: 1px solid #FFFFFF;
-	border-bottom: 1px solid #999;
-
-}
-.basic a:hover {
-	background-color: #ccc;
-
-}
-
-.basic a.selected {
-	background-image: url(/assets/ffffff-op-15.png);
-}
-#subbody{
-	position: relative; 
-}
-#ft{
-	position:relative;
-	text-align: center;
-	margin: 0.5em 0 ;
-
-}

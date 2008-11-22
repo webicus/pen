@@ -36,14 +36,12 @@ class AjaxController < ApplicationController
   end
   
   
-  # Ajax call for fade_replace
+  # Action called by AJAX link to remote. (called in fade_replace)
   def fade_replace_aj
     
-    @cnt = session[:fade_replace_cnt] || 0
-    
-    @str = "Display image #{params[:id]}"
-    @image_name = "pen#{params[:id]}"
-    @pen_name = "pen#{params[:id]}"
+    @cnt = session[:fade_replace_cnt] || 0 #used for odd/even count.
+    @image_name = "pen#{params[:id]}" # used to lookup the image's filename
+    @pen_name = "pen#{params[:id]}" # displayed under the image
     if @cnt.to_i % 2 == 0
       @from = "_even"
       @to = "_odd"

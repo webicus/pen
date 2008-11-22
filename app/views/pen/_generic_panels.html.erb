@@ -1,13 +1,26 @@
 <div id="central">
-	<!--
-		 <div id="pen_image_even" style="postion: absolute; left:200px; top: 100px;">
-	   <img alt="aa086246.jpg" src="/images/pens/large/aa086246_lrg.jpg" />
-		-->
-</div>
-<!-- central content area - replaceable content -->
+	<div id="pen_image_even" style="display:none"></div>
+	<div id="pen_image_odd" style="display:none"></div>
+	
+	<div id="replaceable">
+    <%= render :partial => 'marketing_copy' %>
+	</div>
+    	
+
+    <% if false %>
+    <div id="pen_image_even" style="postion: relative; background-image: url(/assets/purple-gradient-op-95.png);margin-left:211px; margin-top: 53px;">
+        <img style="margin: 100px 10px;" alt="aa086246.jpg" src="/images/pens/large/aa086246_lrg.jpg" />
+    </div>
+	<% elsif false %>
+    <div id="pen_image_even" style="postion: relative; background-image: url(/assets/purple-gradient-op-95.png);margin-left:211px; margin-top: 53px;">
+        <img style="margin: 100px 45px;" alt="aa086246.jpg" src="/images/colors/large/aa086147_lrg.jpg" />
+    </div>
+	<% end %>
+</div><!-- central content area - replaceable content -->
+
 <div id="subbody" style="margin-top: <%=@margin_top%>;">
     <!-- area under image, static -->
-    <% if (defined? @colors) %>
+	<% if (defined? @colors) %>
     <%= render :partial => 'color_panels' %>
     <% else %>
     <%= render :partial => 'panels' %>

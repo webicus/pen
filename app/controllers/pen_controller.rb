@@ -4,6 +4,8 @@ class PenController < ApplicationController
   
   LARGE_DIR="/images/pens/large"
   SMALL_DIR="/images/pens/small"
+  LARGE_COLORS_DIR="/images/colors/large"
+  SMALL_COLORS_DIR="/images/colors/small"
   
   
   def index
@@ -22,6 +24,9 @@ class PenController < ApplicationController
   end
   
   def elite
+    @last = nil
+    @cnt = 0
+    
     @margin_top ="-187px"
     @collection = Collection.find_by_title("elite")   
   end
@@ -39,15 +44,25 @@ class PenController < ApplicationController
   end
   
   
-  # Ajax call for fade_replace
+  # Action called by AJAX link to remote. (called in fade_replace)
   def fade_replace_aj
+    item = nil
+
+    @style=""
+    if params[:color] == 'true'
+      dir = LARGE_COLORS_DIR
+      item = Color.find_by_id(params[:id])
+      @pen_name = item.title
+      @style = "style='margin-right: 45px; margin-left: 45px;'"
+    else
+      dir = LARGE_DIR
+      item = Pen.find_by_id(params[:id])   
+      @pen_name = Style.find_by_id(item.style_id).title # displayed under the image
+    end
+    image = item.image_filename
+    @cnt = session[:fade_replace_cnt] || 0 #used for odd/even count.
+    @image_name = dir + "/" + image + "_lrg.jpg" # used to lookup the image's filename
     
-    @cnt = session[:fade_replace_cnt] || 0
-    @pen = Pen.find_by_id(:id)
-    @style = Style.find_by_id(@pen.id)
-    @str = "Display image #{@style.title}"
-    @image_name = LARGE_DIR + pen.image_filename
-    @pen_name = style.title
     if @cnt.to_i % 2 == 0
       @from = "_even"
       @to = "_odd"
@@ -55,7 +70,8 @@ class PenController < ApplicationController
       @from = "_odd"
       @to = "_even"
     end
-    @cnt = @cnt + 1
+
+      @cnt = @cnt + 1
     session[:fade_replace_cnt] = @cnt
     @last = params[:id]
   end

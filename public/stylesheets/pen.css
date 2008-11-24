@@ -3,18 +3,19 @@ body {
     text-align: left;
     color: #ffffff;
     background: #383e61;
-    margin: 0 0 5px 0;
-} #custom-doc {
-    width: 81em; /*1038+15 = 1053 ==81em 1038 - 79.8462em; */ *
-
-width:
-    81em;
+    background-image: url(/assets/gradient-background.png);
+    background-repeat: repeat-x;
+    margin: 0 0 0 0;
+} 
+#custom-doc {
+    width: 79.8461em; /*1038+15 = 1053 ==81em, 1038/13.=79.8461 1038 - 79.8462em; */ *
+	*width: 77.85em;
 }
 
 h1, h2, h3 {
     margin-top: 0px;
 } #lnav {
-    font-size: 138.5%;
+    font-size: 100%;
     text-align: right;
     left: 18px;
     position: absolute;
@@ -22,17 +23,21 @@ h1, h2, h3 {
     left: 15px;
     color: #ffffff;
     padding: 10px;
-    background-image: url(/assets/1c12ed-op-15.png)
+    background-image: url(/assets/1c12ed-op-15.png);
+	text-transform: uppercase;
 } #tag-line {
-    font-size: 123.1%;
     position: absolute;
     top: 4px;
-    left: 722px;
+    left: 670px;
     color: #ffffff;
+	font-family: "Edwardian Script ITC";
+    font-size: 233%;
 } #container { /* body, container */
     position: relative;
     margin: 0 0 0 5px;
-    border: 5px solid #FFF;
+    /*
+border: 5px solid #FFF;
+*/
 } #central { /* body, container */
     position: absolute;
     top: 0;
@@ -62,7 +67,7 @@ a:hover, a:active { /* hover and when clicked */
 } #logo {
     left: 18px;
     position: absolute;
-    top: 12px;
+    top: 31px;
 } .copy {
     background-image: url(/assets/383e61-op-20.png);
     padding: 20px 10px;
@@ -87,29 +92,21 @@ a:hover, a:active { /* hover and when clicked */
     position: absolute;
     top: 134px;
     left: 228px;
-    width: 46.158em; *
-
-width:
-    45em;
-
-background-image:
-    url(/assets/ffffff-op-15.png);
-
-padding:
-    1.7em 1.7em;
-} #copy-mkt1 {
+    width: 46.158em; 
+	*width: 45em;
+	background-image:    url(/assets/ffffff-op-15.png);
+	padding:   1.7em 1.7em;
+} 
+#copy-mkt1 {
     left: 341px;
-} #copy-mkt h1, #copy-mkt1 h1 {
+} 
+#copy-mkt h1, #copy-mkt1 h1 {
     text-transform: capitalize;
 }
 
 /*
  ============================
- */ #footer {
-    position: relative;
-    text-align: center;
-    margin: 153.9%;
-}
+ */ 
 
 p img {
     margin: 15px;
@@ -140,12 +137,14 @@ p img {
     display: block;
     margin-top: 0;
     text-decoration: none;
-    font-size: 138.5%;
+    font-size: 100%;
     color: white;
     background-image: url(/assets/ffffff-op-15.png);
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #999;
 } .basic a:hover {
+	text-decoration: underline; 
+	color: #383e61;
     background-color: #ccc;
 } .basic a.selected {
     background-image: url(/assets/ffffff-op-15.png);
@@ -155,6 +154,7 @@ p img {
     position: relative;
     text-align: center;
     margin: 0.5em 0;
+	display: none;
 } #pen_image_odd, #pen_image_even {
     position: relative;
     background-image: url(/assets/purple-gradient-op-95.png);

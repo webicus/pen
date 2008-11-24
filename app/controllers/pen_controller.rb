@@ -13,13 +13,13 @@ class PenController < ApplicationController
   
   def collector
     @margin_top ="-187px"
-    
-    @collection = Collection.find_by_title("collector")
+
+    @collection = Collection.find_by_title("collector series")
   end
   
   def corporate
     @margin_top ="-187px"
-    @collection = Collection.find_by_title("corporate")
+    @collection = Collection.find_by_title("corporate series")
     
   end
   
@@ -28,7 +28,7 @@ class PenController < ApplicationController
     @cnt = 0
     
     @margin_top ="-187px"
-    @collection = Collection.find_by_title("elite")   
+    @collection = Collection.find_by_title("elite series")   
   end
   
   def color

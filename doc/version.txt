@@ -7,3 +7,12 @@ commit 9d79d268b9598fc52bb6e90834936ecf94bba49e
 Author: ehw <eric@webicus.com>
 Date:   Fri Nov 21 00:02:11 2008 -0500
 
+-----------------------------
+Comment: v1.0 deployment ready
+-----------------------------
+Sat Nov 22 14:47:58 EST 2008
+/c/work/rails/pen
+commit 3bbcb8c2b5e1985459e1bfbca46fe973d9940e79
+Author: ehw <eric@webicus.com>
+Date:   Sat Nov 22 00:52:22 2008 -0500
+

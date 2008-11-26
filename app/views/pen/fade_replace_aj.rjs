@@ -3,5 +3,5 @@ page.visual_effect :fade, "replaceable"
 page.visual_effect :fold, "pen_image#{@from}" #string is the div to impact.
 page.replace_html  "pen_image#{@to}", :partial => 'fade_replace_aj_partial'
 page.visual_effect :appear, "pen_image#{@to}"
-
 page.visual_effect :highlight, "pen_title", :duration => 4, :startcolor => "#617da8", :endcolor => "#383e61"
+

@@ -1,20 +1,20 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"  
-	"http://www.w3.org/TR/html4/strict.dtd"> 
- 
+	"http://www.w3.org/TR/html4/loose.dtd"> 
+ <!--	"http://www.w3.org/TR/html4/strict.dtd" -->
 <html> 
     <head> 
 	<%= render :partial => '/layouts/header'%>
     </head> 
     <body> 
-	<div id="custom-doc"">
+	<div id="custom-doc">
 	<div id="container">
 
 	<%= yield %>
 
 	<%= render :partial => '/layouts/lnav'%>
-	
+	<!--
  	<div id="logo"><img src="/assets/penz-by-design-logo.png" alt="penz by design" /></div>
-
+	-->
  	</div><!-- container -->
 	</div><!-- custom-doc -->
     </body> 

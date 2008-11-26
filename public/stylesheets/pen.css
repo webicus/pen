@@ -1,43 +1,55 @@
+html {
+    background-color: #545E8B;
+}
+
 body {
-    font-family: Verdana, helvetica, sans-serif;
+    font-family: helvetica, Arial, sans-serif;
     text-align: left;
     color: #ffffff;
-    background: #383e61;
-    background-image: url(/assets/gradient-background.png);
+    background: #545e8b;
+    /*
+     background: #383e61;
+     background-image: url(/assets/gradient-background.png);
+     */
     background-repeat: repeat-x;
-    margin: 0 0 0 0;
-} 
-#custom-doc {
-    width: 79.8461em; /*1038+15 = 1053 ==81em, 1038/13.=79.8461 1038 - 79.8462em; */ *
-	*width: 77.85em;
+    margin: auto 0;
+} #custom-doc {
+		margin: auto;
+    width: 79.8461em; /*1038+15 = 1053 ==81em, 1038/13.=79.8461 1038 - 79.8462em; */ 
+	* * width: 77.85em;
+
 }
 
 h1, h2, h3 {
     margin-top: 0px;
 } #lnav {
     font-size: 100%;
+    font-style: italic;
     text-align: right;
-    left: 18px;
+    left: 54px;
     position: absolute;
-    top: 214px;
-    left: 15px;
+    top: 215px;
+    left: 55px;
     color: #ffffff;
-    padding: 10px;
-    background-image: url(/assets/1c12ed-op-15.png);
-	text-transform: uppercase;
+    padding: 2px;
+    /*
+     background-image: url(/assets/1c12ed-op-15.png);
+     */
+    text-transform: uppercase;
 } #tag-line {
     position: absolute;
     top: 4px;
     left: 670px;
     color: #ffffff;
-	font-family: "Edwardian Script ITC";
+    font-family: "Edwardian Script ITC";
     font-size: 233%;
 } #container { /* body, container */
     position: relative;
+    background-image: url(/assets/container-background.gif);
     margin: 0 0 0 5px;
     /*
-border: 5px solid #FFF;
-*/
+     border: 5px solid #FFF;
+     */
 } #central { /* body, container */
     position: absolute;
     top: 0;
@@ -49,7 +61,7 @@ a:link, a:visited { /* unvisited, and visited links*/
     text-decoration: underline;
 }
 
-a:hover, a:active { /* hover and when clicked */
+a:hover, a:active, .basic a:hover { /* hover and when clicked */
     text-decoration: none;
     background-color: #ccc;
 } #lnav ul {
@@ -76,40 +88,49 @@ a:hover, a:active { /* hover and when clicked */
 } #copy-home {
     z-index: 5;
     position: absolute;
-    top: 134px;
+    top: 298px;
     left: 228px;
     width: 200px;
+    font-style: italic;
+    background-image: none;
 } #copy-content {
     z-index: 5;
-    position: absolute;
-    top: 134px;
-    left: 228px;
-    width: 600px;
-    background-image: url(/assets/383e61-op-50.png);
-    padding: 1.7em 1.7em;
+    position: relative;
+    left: 100px;
+    width: 800px;
+    font-style: italic;
+    /*
+     background-image: url(/assets/383e61-op-50.png);
+     */
+    padding: 1.7em;
 } #copy-mkt, #copy-mkt1 {
     z-index: 5;
     position: absolute;
-    top: 134px;
-    left: 228px;
-    width: 46.158em; 
-	*width: 45em;
-	background-image:    url(/assets/ffffff-op-15.png);
-	padding:   1.7em 1.7em;
-} 
-#copy-mkt1 {
-    left: 341px;
-} 
-#copy-mkt h1, #copy-mkt1 h1 {
+    top: 280px;
+    left: 455px;
+    width: 41.158em; *
+
+width: *
+    40.1291em;
+    /*
+     background-image:    url(/assets/ffffff-op-15.png);
+     */
+padding:
+    1.7em 1.7em;
+
+font-style:italic;
+} #copy-mkt1 {
+    left: 455px;
+    top: 253px;
+} #copy-mkt h1, #copy-mkt1 h1 {
     text-transform: capitalize;
 }
 
 /*
  ============================
- */ 
-
+ */
 p img {
-    margin: 15px;
+    margin: 10px;
 }
 
 /* Left Bar */ .basic {
@@ -143,25 +164,31 @@ p img {
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #999;
 } .basic a:hover {
-	text-decoration: underline; 
-	color: #383e61;
+    text-decoration: underline;
+    color: #383e61;
     background-color: #ccc;
 } .basic a.selected {
     background-image: url(/assets/ffffff-op-15.png);
 } #subbody {
     position: relative;
+    margin-left: 1.2307em; *
+
+margin-left:
+    1.2000em;
 } #ft {
     position: relative;
     text-align: center;
-    margin: 0.5em 0;
-	display: none;
+    padding: 0.5em 0;
+    /*
+     display: none;
+     */
 } #pen_image_odd, #pen_image_even {
     position: relative;
     background-image: url(/assets/purple-gradient-op-95.png);
-    margin-left: 211px;
-    margin-top: 53px;
+    margin-left: 223px;
+    margin-top: 41px;
 } #pen_image_odd img, #pen_image_even img {
-    margin: 100px 10px;
+    margin: 60px 4px;
 } .basic a img {
     display: inline;
 } .panel-body a, .panel-body a:hover {

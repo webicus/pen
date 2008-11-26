@@ -1,4 +1,5 @@
 <%# header include %>
+	<title><%=@title%></title>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css"> 
     <link href="/stylesheets/base.css" media="screen" rel="stylesheet" type="text/css" /> 
     <link href="/stylesheets/pen.css" media="screen" rel="stylesheet" type="text/css" /> 
@@ -24,7 +25,10 @@
                 
                 
                 jQuery(".basic").accordion({
-                    animated: 'superbounce',autoheight:false, header:'.head' 
+                    animated: 'superbounce',autoheight: false,alwaysOpen: false, header:'.head' 
                 });
             });
+			
+
+
         </script> 

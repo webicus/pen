@@ -168,11 +168,7 @@
   style_id: 10
   image_filename: aa086761
   sequence: 34
-35:
-  id: 35
-  style_id: 10
-  image_filename: aa086763
-  sequence: 35
+
 36:
   id: 36
   style_id: 10
@@ -195,17 +191,17 @@
   sequence: 39
 40:
   id: 40
-  style_id: 12
+  style_id: 13
   image_filename: aa086240
   sequence: 40
 41:
   id: 41
-  style_id: 12
+  style_id: 13
   image_filename: aa086258
   sequence: 41
 42:
   id: 42
-  style_id: 12
+  style_id: 13
   image_filename: aa086259
   sequence: 42
 43:
@@ -215,7 +211,7 @@
   sequence: 43
 44:
   id: 44
-  style_id: 13
+  style_id: 12
   image_filename: aa086263
   sequence: 44
 45:
@@ -253,3 +249,10 @@
   style_id: 15
   image_filename: aa086247
   sequence: 51
+52:
+  id: 52
+  style_id: 10
+  image_filename: aa086763a
+  sequence: 52
+
+

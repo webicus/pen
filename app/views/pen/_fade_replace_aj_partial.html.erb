@@ -1,9 +1,10 @@
 <%# Called by RJS template, Contains all content that will be inserted %>
 <div id="image_frame" >
-    <img src=<%="#{@image_name}" %> alt="" <%= @style %>/>
     <div id="pen_title">
         <%# @from.to_s  + @to.to_s + @cnt.to_s %>
         <%= "&nbsp; #{@pen_name}" %>
     </div>
+	    <img src="/assets/clear.gif" alt="" style="<%= @style %>"/>
+
 </div>
 <br/>

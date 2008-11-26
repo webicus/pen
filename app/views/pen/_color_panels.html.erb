@@ -1,10 +1,10 @@
 <div id="panels">
-    <div class="basic" id="list1b" style="float:left; width:100%;">
+    <div class="basic" id="list1b" style="<%=@list_style%>">
         <a class="head"><%= "Colors" %></a>
         <div class="panel-body">
 			<p>            
 			<% @colors.each do |c| %>
-            <%= link_to_remote (image_tag("/images/colors/small/#{c.image_filename}.jpg"),
+            <%= link_to_remote (image_tag("/assets/clear.gif", :style => "background-image: url(/images/colors/small/#{c.image_filename}.jpg);width: 170px; height:48px;"),
             :url => {:action => :fade_replace_aj, :color => 'true', :id => c.id }) %>
 			
 			<!--

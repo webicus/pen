@@ -167,7 +167,18 @@ p img {
     text-decoration: underline;
     color: #383e61;
     background-color: #ccc;
-} .basic a.selected {
+} 
+.basic a:hover img {
+    background-color: #000;
+	margin: 9px;
+
+	border-style: solid;
+	border-color: white;
+	border-width: 1px 1px 1px 1px;
+	
+
+} 
+.basic a.selected {
     background-image: url(/assets/ffffff-op-15.png);
 } #subbody {
     position: relative;
@@ -199,6 +210,6 @@ margin-left:
     margin: 0;
 } .panel-body a:hover {
     background-color: transparent;
-    background-image: url(/assets/ffffff-op-15.png);
+
 }
 

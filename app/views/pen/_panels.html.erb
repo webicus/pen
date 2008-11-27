@@ -3,7 +3,7 @@
     <div class="basic" id="list1b" style="float:left; width:100%;">
         <% styles.each do |s| %>
         <% pens = s.pens.find(:all, :order => :sequence) %>
-        <a class="head"><%= s.title %></a>
+        <a class="head">&nbsp;<%= s.title %></a>
         <div class="panel-body">
             <p class="panelcopy">
                 <%= s.description %>
@@ -12,10 +12,13 @@
                 <% pens.each do |p| %>
                 <%= link_to_remote (image_tag("/assets/clear.gif", :style => "background-image: url(/images/pens/small/#{p.image_filename}.jpg); width: 305px; height: 83px;"),
                 :url => {:action => :fade_replace_aj, :id => p.id }) %>
-
                 <%end %>
-
             </p>
-        </div><% end %>
+        </div>
+        <% end %>
+ 
+        <%= render :partial => 'engraving_panel' %>
+ 
     </div>
-</div><!-- id=#panels -->
+</div>
+<!-- id=#panels -->

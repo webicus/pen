@@ -19,12 +19,12 @@ class ApplicationController < ActionController::Base
   #==================================================================
   
   def authorized?
-    session[:stacy]
+    session[:auth]
   end
   def authorize
-    session[:stacy] = true
+    session[:auth] = true
   end
   def logoff
-    session[:stacy] = nil
+    session[:auth] = nil
   end
 end

@@ -1,6 +1,6 @@
 class PenController < ApplicationController
   layout 'catalog'
-  # before_filter :check_authorization, :except => [ :logo,:stacy, :unstacy]
+  #before_filter :check_authorization, :except => [ :friendly, :logo,:stacy, :unstacy]
   
   LARGE_DIR="/images/pens/large"
   SMALL_DIR="/images/pens/small"
@@ -16,13 +16,14 @@ class PenController < ApplicationController
     @margin_top ="-187px"
     @title = TITLE + "Collector Series"
     @collection = Collection.find_by_title("collector series")
+    @engravings = Engraving.find(:all, :order => :sequence)
   end
   
   def corporate
     @title = TITLE + "Corporate Series"
     @margin_top ="-187px"
     @collection = Collection.find_by_title("corporate series")
-    
+    @engravings = Engraving.find(:all, :order => :sequence)
   end
   
   def elite
@@ -31,7 +32,8 @@ class PenController < ApplicationController
     @cnt = 0
     
     @margin_top ="-187px"
-    @collection = Collection.find_by_title("elite series")   
+    @collection = Collection.find_by_title("elite series")  
+    @engravings = Engraving.find(:all, :order => :sequence)
   end
   
   def color
@@ -42,14 +44,20 @@ class PenController < ApplicationController
   end
   def contact_us
     @title = TITLE + "Contact Us"
+    @comment = Comment.new
+    @captcha = (rand()*10000).to_i
+    session[:captcha] = @captcha #pass to create
   end
+  
+  
+  
   def about_us
     @title = TITLE + "About Us"
   end
   def our_products
     @title = TITLE + "Our Products"
   end
-    def accessories
+  def accessories
     @title = TITLE + "Engraving and Accessories"
   end
   
@@ -66,14 +74,20 @@ class PenController < ApplicationController
     item = nil
     
     @style=""
+    ext="jpg"
     if params[:color] == 'true'
       dir = LARGE_COLORS_DIR
       item = Color.find_by_id(params[:id])
       @pen_name = item.title
       # 
       size = 'width:357px;height:101px;padding: 58px 216px;'
+    elsif params[:engraving] == 'true'
+      dir = "/images/engravings/large"
+      item = Engraving.find_by_id(params[:id])   
+      @pen_name = nil
+      size = 'width:793px;height:216px;'
     else
-
+      
       dir = LARGE_DIR
       item = Pen.find_by_id(params[:id])   
       @pen_name = Style.find_by_id(item.style_id).title # displayed under the image
@@ -81,7 +95,7 @@ class PenController < ApplicationController
     end
     image = item.image_filename
     @cnt = session[:fade_replace_cnt] || 0 #used for odd/even count.
-    @image_name = dir + "/" + image + "_lrg.jpg" # used to lookup the image's filename
+    @image_name = dir + "/" + image + "_lrg." + ext # used to lookup the image's filename
     @style = "background-image: url(#{@image_name});background-position:center center;background-repeat:no-repeat;margins:auto; #{size}"
     if @cnt.to_i % 2 == 0
       @from = "_even"
@@ -105,6 +119,10 @@ class PenController < ApplicationController
   end
   
   def stacy
+    #authorize
+    redirect_to :controller => :pen
+  end
+  def friendly
     authorize
     redirect_to :controller => :pen
   end

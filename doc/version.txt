@@ -16,3 +16,21 @@ commit 3bbcb8c2b5e1985459e1bfbca46fe973d9940e79
 Author: ehw <eric@webicus.com>
 Date:   Sat Nov 22 00:52:22 2008 -0500
 
+-----------------------------
+Comment: v1.2.1 - edit to final
+-----------------------------
+Thu Nov 27 10:22:11 EST 2008
+/c/work/rails/pen
+commit ba69084bfd61e5fdace65ecbf53c2a263c14d410
+Author: ehw <eric@webicus.com>
+Date:   Wed Nov 26 17:41:27 2008 -0500
+
+-----------------------------
+Comment: v1.2.1 - edit to final
+-----------------------------
+Thu Nov 27 13:21:41 EST 2008
+/c/work/rails/pen
+commit ced10cfa9476f402fce28293222c072fca3b9c70
+Author: ehw <eric@webicus.com>
+Date:   Thu Nov 27 13:21:40 2008 -0500
+

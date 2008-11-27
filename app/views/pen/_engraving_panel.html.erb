@@ -1,0 +1,12 @@
+<%# styles.each do |s| %>
+<%# pens = s.pens.find(:all, :order => :sequence) %>
+<a class="head">&nbsp;<%= "Engraving" %></a>
+<div class="panel-body">
+    <p>
+        <% @engravings.each do |p| %>
+        <%= link_to_remote (image_tag("/assets/clear.gif", :style => "background-image: url(/images/engravings/small/#{p.image_filename}.jpg); width: 305px; height: 83px;"),
+        :url => {:action => :fade_replace_aj, :id => p.id, :engraving => 'true' }) %>
+        <% end %>
+    </p>
+</div>
+<%# end %>

@@ -2,31 +2,31 @@
   id: 1
   collection_id: 1
   title: Presidential
-  description: The Presidential pen with a luxuriously featured Swarovski crystal or diamonds & custom casted 3 dimensional accent rings, bands & caps.  Finished in 22kt gold or black titanium with Rhodium plating. Available in roller ball or 18kt gold or steel fountain tip.
+  description: The Presidential pen features a luxurious Swarovski crystal  and custom casted 3 dimensional accent rings. The pen comes in 22kt gold or black titanium with Rhodium plating. Available in roller ball or 18kt gold or steel fountain tip.  
   sequence: 1
 2:
   id: 2
   collection_id: 1
   title: Presidential II
-  description: The Presidential pen with a luxuriously featured Swarovski crystal or diamonds & custom casted 3 dimensional accent rings, bands & caps. Finished in 22kt gold or black titanium with Rhodium plating.  Available in roller ball or 18kt gold or steel fountain tip.
+  description: The Presidential II pen is for those who want a smaller version of the Presidential pen.  The pen comes with the same features as the larger version.  Finished in 22kt gold or black titanium with Rhodium plating.  Available in roller ball or 18kt gold or steel fountain tip.  
   sequence: 2
 3:
   id: 3
   collection_id: 1
   title: Legacy
-  description: Legacy pen features hand-carved bamboo patterns on the ends, clip and accent rings. Individually hand cast, polished then plated with precious 22k Gold or Black Titanium; these stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 5/8” x 5 5/8")
+  description: The Legacy pen features hand-carved bamboo patterns on the ends, clip and accent rings. Each pattern is individually hand cast, polished then plated with precious 22k Gold or Black Titanium. These stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 5/8" x 5 5/8")   
   sequence: 3
 4:
   id: 4
   collection_id: 1
   title: Emperor
-  description: Designed to please the most discriminating pen collector, the Emperor pen features four unique hand carved patterns found on the ends, clip and accent rings. Hand cast, polished then plated with precious 22k Gold or Black Titanium, these stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 21/32" x 5 5/8")
+  description: The Emperor pen is designed to please the most discriminating pen collector. The pen features four unique hand carved patterns found on the ends, clip and accent rings. Each pattern is hand cast, polished then plated with precious 22k Gold or Black Titanium. All patterns are encompassed throughout by Rhodium plated fittings. (Dimensions = 21/32" x 5 5/8")  
   sequence: 4
 5:
   id: 5
   collection_id: 1
   title: Emperor II
-  description: Designed to please the most discriminating pen collector, the Emperor pen features four unique hand carved patterns found on the ends, clip and accent rings. Hand cast, polished then plated with precious 22k Gold or Black Titanium, these stunning decorative inlays are encompassed throughout by Rhodium plated fittings. (Dimensions = 19/32" x 5 1/4")
+  description: The Emperor II is for those who want a smaller version of the Emperor pen.  The pen comes with the same features as the larger version.  Finished in 22K gold or black titanium with decorative inlays throughout. (Dimensions = 19/32" x 5 ¼")   
   sequence: 5
 6:
   id: 6
@@ -62,25 +62,25 @@
   id: 11
   collection_id: 3
   title: Elite
-  description: The Elite pen offers form and function featuring an elegant rounded profile and accented in either Gold Titanium or Rhodium finish. 
+  description: The Elite pen offers form and function featuring an elegant rounded profile and accented in either Gold Titanium or Rhodium finish.    
   sequence: 11
 12:
   id: 12
   collection_id: 3
   title: Sidney Signature
-  description: Sidney Signature offers your choice of rich 22k gold or Black Titanium, hand-cast engraved insets on the cap and barrel ends surrounded by brilliant Rhodium plating. (11/16" x 5 3/4")
+  description: The Sidney Signature pen offers your choice of rich 22k gold or Black Titanium, hand-cast engraved insets on the cap and barrel ends surrounded by brilliant Rhodium plating. (11/16" x 5 3/4")   
   sequence: 12
 13:
   id: 13
   collection_id: 3
   title: Sidney Signature II
-  description: Sidney Signature offers your choice of rich 22k gold or Black Titanium, hand-cast engraved insets on the cap and barrel ends surrounded by brilliant Rhodium plating.  (1/2 x 4 3/4)
+  description: Sidney Signature pen offers you the same features as the Sidney Signature in a smaller version  Each pen comes in either 22k gold or Black Titanium, hand-cast engraved insets on the cap and barrel ends surrounded by brilliant Rhodium plating.  (1/2 x 4 3/4)   
   sequence: 13
 14:
   id: 14
   collection_id: 3
   title: Executive
-  description: The Executive Pen carries a streamlined look with high quality components that will surely compliment any executive’s desk.   (Gold/black, black titanium & gold, black titanium & chrome, & brushed satin/chrome finish)
+  description: The Executive Pen carries a streamlined look with high quality components that will surely compliment any executive’s desk.     
   sequence: 14
 15:
   id: 15

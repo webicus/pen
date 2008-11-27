@@ -1,0 +1,52 @@
+
+<% form_for(@comment) do |f| %>
+  <%= f.error_messages %>
+<div id="l" style="float:left; padding-right:10px;">
+  <p>
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </p>
+    <p>
+    <%= f.label :address %><br/>
+    <%= f.text_field :address %>
+  </p>
+    <p>
+    <%= f.label :color_id %><br/>
+	<%= f.collection_select(:color_id, Color.find(:all, :order => :sequence), :id, :title, {:prompt => 'Select Color'}) %>
+  </p>
+     <p>
+    <%= f.label "Please enter this number: #{@captcha}" %><br/>
+	<%= f.text_field :captcha %> 
+  </p>
+</div>
+  <p>
+    <%= f.label :phone %><br/>
+    <%= f.text_field :phone %>
+  </p>
+    <p>
+    <%= f.label :email %><br/>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+  	
+    <%= f.label :type_id %><br/>
+	
+	<%= f.collection_select(:type_id, Type.find(:all, :order => :sequence), :id, :title, {:prompt => 'Select Pen Type'}) %>
+
+    <%#= f.text_field :type_id %>
+  </p>
+
+  
+    <p>
+    <%= f.label :inquiry %><br />
+	  <%= f.text_area(:inquiry, :cols =>90, :rows => 2) %>
+
+  </p>
+  
+
+  
+  
+  <p>
+    <%= f.submit "Send" %>
+  </p>
+<% end %>

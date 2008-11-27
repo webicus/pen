@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @comment.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @comment.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @comment.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @comment.email %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @comment.type_id %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @comment.color_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

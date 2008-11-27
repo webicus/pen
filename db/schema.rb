@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081122030510) do
+ActiveRecord::Schema.define(:version => 20081129220314) do
 
   create_table "collections", :force => true do |t|
     t.string   "title",                          :default => "", :null => false
@@ -22,6 +22,27 @@ ActiveRecord::Schema.define(:version => 20081122030510) do
 
   create_table "colors", :force => true do |t|
     t.string   "title"
+    t.string   "image_filename"
+    t.integer  "sequence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "email"
+    t.integer  "type_id"
+    t.integer  "color_id"
+    t.string   "inquiry",    :limit => 600, :default => "", :null => false
+    t.integer  "captcha"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "engravings", :force => true do |t|
+    t.string   "title",          :default => ""
     t.string   "image_filename"
     t.integer  "sequence"
     t.datetime "created_at"
@@ -41,6 +62,13 @@ ActiveRecord::Schema.define(:version => 20081122030510) do
     t.string   "title",                          :default => "", :null => false
     t.string   "description",    :limit => 3000, :default => "", :null => false
     t.string   "image_filename"
+    t.integer  "sequence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "types", :force => true do |t|
+    t.string   "title",      :default => ""
     t.integer  "sequence"
     t.datetime "created_at"
     t.datetime "updated_at"

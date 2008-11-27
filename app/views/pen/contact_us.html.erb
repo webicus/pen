@@ -7,40 +7,35 @@
 
 	<div id="subbody"> <!-- area under image, static -->
     <div id="copy-content">
+    	<% if flash[:notice] %>
+<p style="color: green; background-color:#ccc;border-style:solid;padding: 50px;">
+<%= flash[:notice] %></p>
+<% end %>
 <h1>CONTACT US</h1>
 
-
-
-<h3>Headquarter:</h3>	
+<div id="intro" style="float: right; padding: 0 0 0 30px;">
+        	<h3>Headquarters:</h3>	
 
 <p>4355 Cobb Parkway<br />
 Suite J 521<br />
 Atlanta, GA 30339-2496<br />
 Phone: 1-877-736-7117<br />
-Email:  stacy@penzbydesign.com<br />
+Email:  orders@penzbydesign.com<br />
 </p>
+</div>
+
+
+
+
 
 <h3>Request for Information:</h3>
 
 <p>If you would like information on our products and pricing, please complete the information below and we will be pleased to contact you.
 </p>
-<form name="input" >
-NAME: 	&nbsp;
-<input type="text" name="user"><br />
 
-ADDRESS: 	&nbsp;
-<input type="text" name="user"><br />
-
-PHONE NUMBER: 	&nbsp;
-<input type="text" name="user"><br />
-
-EMAIL: 	&nbsp;
-<input type="text" name="user"><br />
+<%= render :partial => "contact_form" %>
 
 
-<input type="submit" value="Submit">
-</form>
-<p>
 
     </div>
 	<br clear="all"/>

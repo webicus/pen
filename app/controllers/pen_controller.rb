@@ -39,7 +39,7 @@ class PenController < ApplicationController
   def color
     @title = TITLE + "Colors"
     @margin_top ="-187px"
-    @list_style = "float:left; width:100%;height: 300px; overflow-y: auto;"
+    @list_style = "width:100%;height: 300px; overflow-y: auto;" # removed float:left; 
     @colors = Color.find(:all, :order => :sequence)
   end
   def contact_us

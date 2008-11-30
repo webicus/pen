@@ -2,7 +2,7 @@
 
 # Uncomment below to force Rails into production mode when
 # you don't control web/app server and can't set it the proper way
-# ENV['RAILS_ENV'] ||= 'production'
+#ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '2.1.1' unless defined? RAILS_GEM_VERSION
@@ -67,4 +67,28 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
-end
+  
+  end
+    MAIL_AUTH = ['none', 'plain', 'login', 'cram_md5']
+
+  
+
+    # SET MAIL SERVER SETTINGS FROM PREFERENCES
+    mail_host = 'localhost'
+    mail_server_settings = {
+      :address => mail_host,
+      :domain => mail_host,
+      :port => 25,
+    }
+    mail_auth_type = 'none'
+#    if !mail_auth_type != 'none'
+#      mail_server_settings[:authentication] = mail_auth_type.to_sym
+#      mail_server_settings[:user_name] = find_by_name('mail_username').value
+#      mail_server_settings[:password] = find_by_name('mail_password').value
+#    end
+    ActionMailer::Base.smtp_settings = mail_server_settings
+    
+    ActionMailer::Base.delivery_method = :sendmail  
+ActionMailer::Base.perform_deliveries = true  
+ActionMailer::Base.raise_delivery_errors = true  
+ActionMailer::Base.default_charset = "utf-8"

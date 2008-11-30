@@ -50,6 +50,11 @@ class CommentsController < ApplicationController
     else
       
       if @comment.save
+        
+        Notifier.deliver_inquiry(@comment)
+        
+        
+        
         flash[:notice] = 'Thank you for your email.'
         respond_to do |format|
           format.html { redirect_to(:controller => :pen, :action => :contact_us) }          

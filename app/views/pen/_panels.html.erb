@@ -1,6 +1,6 @@
 <div id="panels">
     <% styles = @collection.styles.find(:all, :order => :sequence) %>
-    <div class="basic" id="list1b" style="float:left; width:100%;">
+    <div class="basic" id="list1b" style="width:100%;"> 
         <% styles.each do |s| %>
         <% pens = s.pens.find(:all, :order => :sequence) %>
         <a class="head">&nbsp;<%= s.title %></a>

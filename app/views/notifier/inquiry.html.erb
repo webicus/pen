@@ -1,0 +1,11 @@
+
+A new inquiry was submitted at <%= Time.now.utc %>
+
+<%=h @comment.name %>
+<%=h @comment.address %>
+<%=h @comment.phone %>
+<%=h @comment.email %>
+<%=h Type.find_by_id(@comment.type_id).title if @comment.type_id %> 
+<%=h Color.find_by_id(@comment.color_id).title if @comment.color_id %>
+<%=h Style.find_by_id(@comment.style_id).title  if @comment.style_id   %>
+<%=h @comment.inquiry %>

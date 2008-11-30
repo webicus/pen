@@ -34,3 +34,12 @@ commit ced10cfa9476f402fce28293222c072fca3b9c70
 Author: ehw <eric@webicus.com>
 Date:   Thu Nov 27 13:21:40 2008 -0500
 
+-----------------------------
+Comment: v1.3.0
+-----------------------------
+Sat Nov 29 19:16:03 EST 2008
+/c/work/rails/pen
+commit 0039d75399d1746ce361726713a1bf709b49b559
+Author: ehw <eric@webicus.com>
+Date:   Thu Nov 27 13:21:40 2008 -0500
+

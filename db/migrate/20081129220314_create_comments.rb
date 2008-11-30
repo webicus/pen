@@ -7,7 +7,7 @@ class CreateComments < ActiveRecord::Migration
       t.string :email
       t.integer :type_id
       t.integer :color_id
-      
+      t.integer :style_id      
       t.column :inquiry, :string, :limit => 600, :default => "", :null => false
       t.integer :captcha
       

@@ -27,15 +27,18 @@
     <%= f.label :email %><br/>
     <%= f.text_field :email %>
   </p>
+  <div id="l" style="float:left; padding-right:10px;">
   <p>
-  	
     <%= f.label :type_id %><br/>
-	
 	<%= f.collection_select(:type_id, Type.find(:all, :order => :sequence), :id, :title, {:prompt => 'Select Pen Type'}) %>
-
     <%#= f.text_field :type_id %>
   </p>
-
+</div>
+  <p>
+    <%= f.label :style_id %><br/>
+	<%= f.collection_select(:style_id, Style.find(:all, :order => :title), :id, :title, {:prompt => 'Select Pen Style'}) %>
+    <%#= f.text_field :type_id %>
+  </p>
   
     <p>
     <%= f.label :inquiry %><br />

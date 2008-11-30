@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20081129220314) do
     t.string   "email"
     t.integer  "type_id"
     t.integer  "color_id"
+    t.integer  "style_id"
     t.string   "inquiry",    :limit => 600, :default => "", :null => false
     t.integer  "captcha"
     t.datetime "created_at"

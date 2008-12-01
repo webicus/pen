@@ -43,7 +43,7 @@ class CommentsController < ApplicationController
     
     @comment = Comment.new(params[:comment])
     if @comment.captcha.to_i != session[:captcha]
-      flash[:notice] = "Please reenter the secret number " + @comment.captcha.to_s + session[:captcha].to_s
+      flash[:notice] = "Please reenter the secret number " 
       respond_to do |format|
         format.html { redirect_to(:controller => :pen, :action => :contact_us) and return false}
       end
@@ -51,14 +51,15 @@ class CommentsController < ApplicationController
       
       if @comment.save
         
-        Notifier.deliver_inquiry(@comment)
-        
-        
-        
+        Notifier.deliver_inquiry(@comment)        
         flash[:notice] = 'Thank you for your email.'
         respond_to do |format|
           format.html { redirect_to(:controller => :pen, :action => :contact_us) }          
         end
+      else
+        flash[:comment] = @comment
+        redirect_to :controller => :pen, :action => :contact_us
+        
       end
     end
   end

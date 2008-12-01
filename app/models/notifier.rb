@@ -7,7 +7,7 @@ class Notifier < ActionMailer::Base
   def inquiry(comment)
     @subject = "Penz by Design Inquiry"
     @body       = {:comment => comment}
-    @recipients = "stacy.penz@gmail.com"
+    @recipients = "stacy.penz@gmail.com" #"elmoakmaple@yahoo.com" #
     @bcc        = ''
     @from       = "orders@penzbydesign.com"
     @sent_on    = Time.now.utc

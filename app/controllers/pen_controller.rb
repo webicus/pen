@@ -44,7 +44,11 @@ class PenController < ApplicationController
   end
   def contact_us
     @title = TITLE + "Contact Us"
-    @comment = Comment.new
+    if flash[:comment]
+      @comment = flash[:comment]
+    else
+      @comment = Comment.new
+    end
     @captcha = (rand()*10000).to_i
     session[:captcha] = @captcha #pass to create
   end

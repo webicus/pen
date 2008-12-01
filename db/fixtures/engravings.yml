@@ -2,14 +2,10 @@
   id: 1
   image_filename: john
   sequence: 1
-2:
-  id: 2
-  image_filename: penz-cap
-  sequence: 2
 3:
   id: 3
   image_filename: sdr
-  sequence: 3
+  sequence: 5
 4:
   id: 4
   image_filename: stacy-cap
@@ -17,4 +13,4 @@
 5:
   id: 5
   image_filename: sdr2
-  sequence: 5
+  sequence: 3

@@ -212,4 +212,10 @@ margin-left:
     background-color: transparent;
 
 }
-
+.errorExplanation  {
+color: green; 
+background-color:#ccc;
+border-style:solid;
+padding: 10px;
+width: 550px;
+}

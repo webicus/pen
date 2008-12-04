@@ -1,5 +1,8 @@
 <%# header include %>
 	<title><%=@title%></title>
+	<% if defined? @meta_keywords%>
+	<meta name="keywords" content="<%=@meta_keywords%>">
+	<% end #defined?%>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" > 
     <link href="/stylesheets/base.css" media="screen" rel="stylesheet" type="text/css" > 
     <link href="/stylesheets/pen.css" media="screen" rel="stylesheet" type="text/css" > 

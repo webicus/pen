@@ -10,7 +10,7 @@
             </p>
             <p>
                 <% pens.each do |p| %>
-                <%= link_to_remote (image_tag("/assets/clear.gif", :style => "background-image: url(/images/pens/small/#{p.image_filename}.jpg); width: 305px; height: 83px;"),
+                <%= link_to_remote (image_tag("/assets/clear.gif", :alt => "#{s.title}",  :style => "background-image: url(/images/pens/small/#{p.image_filename}.jpg); width: 305px; height: 83px;"),
                 :url => {:action => :fade_replace_aj, :id => p.id }) %>
                 <%end %>
             </p>

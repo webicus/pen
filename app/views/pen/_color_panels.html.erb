@@ -4,7 +4,7 @@
         <div class="panel-body">
 			<p>            
 			<% @colors.each do |c| %>
-            <%= link_to_remote (image_tag("/assets/clear.gif", :style => "background-image: url(/images/colors/small/#{c.image_filename}.jpg);width: 170px; height:48px;"),
+            <%= link_to_remote (image_tag("/assets/clear.gif", :alt => "#{c.title}", :style => "background-image: url(/images/colors/small/#{c.image_filename}.jpg);width: 170px; height:48px;"),
             :url => {:action => :fade_replace_aj, :color => 'true', :id => c.id }) %>
 			
 			<!--

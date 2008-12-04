@@ -152,7 +152,7 @@ p img {
     margin: 0.8em 5px 0 5px;
     padding: .5em;
     background-image: url(/assets/b9c4d8-op-45.png);
-    color: #dbc055;
+    color: #222; /*#dbc055;*/
 } .basic a {
     cursor: pointer;
     display: block;

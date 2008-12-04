@@ -9,10 +9,12 @@ class PenController < ApplicationController
   TITLE = "Penz by Design - "
   
   def index
+    @meta_keywords = "penz by design;  handmade pens; unique pens; handcrafted writing instruments; custom made pens; engraved pens; penz; quill"
     @title = "Penz by Design - Handcrafted writing instruments for you"
   end
   
   def collector
+    @meta_keywords = "custom made fountain pens; fountain pens; diamond pens; limited edition pens; personalized pens; highend pens"
     @margin_top ="-187px"
     @title = TITLE + "Collector Series"
     @collection = Collection.find_by_title("collector series")
@@ -20,6 +22,7 @@ class PenController < ApplicationController
   end
   
   def corporate
+    @meta_keywords = "corporate pens; executive pens; business pen; power pens; custom pens;"
     @title = TITLE + "Corporate Series"
     @margin_top ="-187px"
     @collection = Collection.find_by_title("corporate series")
@@ -27,6 +30,7 @@ class PenController < ApplicationController
   end
   
   def elite
+    @meta_keywords = "rollerball; pens; unique pen; signature pens; executive pens; personalized pens"
     @title = TITLE + "Elite Series"
     @last = nil
     @cnt = 0
@@ -37,12 +41,14 @@ class PenController < ApplicationController
   end
   
   def color
+    @meta_keywords = "unique pen colors; pen designs; pink and green;"
     @title = TITLE + "Colors"
     @margin_top ="-187px"
     @list_style = "width:100%;height: 300px; overflow-y: auto;" # removed float:left; 
     @colors = Color.find(:all, :order => :sequence)
   end
   def contact_us
+    @meta_keywords = "Atlanta Pen Company; 4355 Cobb Parkway; penz by design pens"
     @title = TITLE + "Contact Us"
     if flash[:comment]
       @comment = flash[:comment]
@@ -56,9 +62,11 @@ class PenController < ApplicationController
   
   
   def about_us
+    @meta_keywords = "Corporate gift ideas; Atlanta pens; Penz by Design Inc; stacy robinson; gifts for executives; employee appreciation gifts"
     @title = TITLE + "About Us"
   end
   def our_products
+    @meta_keywords = "corporate gifts; quality custom pens; gold nib pens; fine pens; exclusive warranty; quality standards"
     @title = TITLE + "Our Products"
   end
   def accessories
